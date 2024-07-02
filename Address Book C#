@@ -1,0 +1,136 @@
+
+using System;
+using System.Collections;
+using System.Linq;
+using System.Text;
+/// Using the selected libraries
+
+class AddressProgram
+{
+    static void Main()
+    {
+        ArrayList address = new ArrayList { };
+        Boolean menu = true;
+        Double keychar;
+        do
+        {
+            // Использоуем структуры данных ArrayList 
+            Console.WriteLine("Welcome to my address book program");
+            Console.WriteLine("*****************************");
+            Console.WriteLine("Press 1 to Add an entry to the address book");
+            Console.WriteLine("Press 2 to Remove any entry in the address book");
+            Console.WriteLine("Press 3 to Print the book to the screen");
+            Console.WriteLine("Press 4 to Edit a record");
+            Console.WriteLine("Press 5 to Search for a record");
+            Console.WriteLine("Press 6 the record was found ");
+            Console.WriteLine("Press 7 you have found the selected entry");
+            Console.ReadLine();
+
+
+            Console.WriteLine("Please Enter your Lastname");
+            string str2 = "Lastname";
+            str2 = Console.ReadLine();
+            string valueString2 = str2;
+
+            Console.WriteLine("Please Enter your Firstname");
+            string str1 = "Firstname";
+            str1 = Console.ReadLine();
+             string str 2="Secondname"();
+             str2=Console.ReadLine();
+           
+            string valueString1 = str1;
+            string valueString2=str2;
+
+            Console.WriteLine("Please Enter your Address, house number and town");
+            string str3 = "Address";
+            str3 = Console.ReadLine();
+            string valueString3 = str3;
+            string str4="Address";
+            str4=Console.ReadLine();
+            string=valueString4=str4
+
+            Console.WriteLine("Please Enter your County");
+            string str5 = "County";
+            str5 = Console.ReadLine();
+            string valueString5 = str5;
+
+            Console.WriteLine("Please Enter your Postcode");
+            string str6 = "Postcode";
+            str6 = Console.ReadLine();
+            string valueString6 = str6;
+
+
+
+            Console.WriteLine("Here is a list of the stored names and addresees that you have entered so far");
+            Console.WriteLine("******************************************************************************");
+            Console.ReadLine();
+
+Console.WriteLine("Lastname you entered: " + valueString2);
+            Console.WriteLine("Firstname you entered: " + valueString1);
+            Console.WriteLine("Address and house number and town you entered: " + valueString3);
+            Console.WriteLine("County you entered: " + valueString5);
+            Console.WriteLine("Postcode you entered: " + valueString6);
+            Console.WriteLine("place of residence registration valueString4");
+            Console.ReadLine();
+          
+        }
+        while(menu == true);
+        }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var config = SpeechConfig.FromSubscription("YOUR_SUBSCRIPTION_KEY", "YOUR_REGION");
+var audioConfig = AudioConfig.FromDefaultMicrophoneInput();
+using (var recognizer = new SpeechRecognizer(config, audioConfig))
+{
+    Console.WriteLine("Say something...");
+    var result = recognizer.RecognizeOnceAsync().GetAwaiter().GetResult();
+    Console.WriteLine($"RECOGNIZED: {result.Text}");
+}
+
+
+
+
+
+
+public partial class Controls_HTML : System.Web.UI.UserControl
+{
+    private int _PrimaryID = 0;
+
+    public int PropertyID
+    {
+        get { return _PrimaryID; }
+        set { _PrimaryID = value; }
+    }
+
+    string ConnStr = 
+        System.Configuration.ConfigurationManager.AppSettings.Get("GlobalConn").ToString();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+        SqlConnection conn = null;
+        SqlDataReader rdr = null;
